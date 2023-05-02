@@ -1,0 +1,24 @@
+magisters_guard_1 = { # Magister Guard 1 (Britannic) 
+can_recruit = { is_ai = no } # Never recruitable by ai
+	type = heavy_infantry # are heavy infantry
+	
+	damage = 36 # damage value of unit
+	toughness = 26 # toughness value of unit
+	pursuit = 0 # pursuit value of unit
+	screen = 24 # screen value of unit
+	
+	
+
+	counters = {
+		# what type of men at arms this counters for example archers
+	skirmishers = 2 
+	pikemen = 2}
+
+	buy_cost = {150 # cost of a unit }
+	low_maintenance_cost = { 0 # unraised maintenance cost of a unit }
+	high_maintenance_cost = { 1 # raised maintenance cost of a unit }
+	
+	stack = 200 # Men in one unit
+	ai_quality = { value = 300 # ai weight value }
+	icon = heavy_infantry # name of icon without .dds 
+	}
