@@ -1,5 +1,19 @@
-magisters_guard_1 = { # Magister Guard 1 (Britannic) 
-can_recruit = { is_ai = no } # Never recruitable by ai
+magisters_guard_1 = { # vestal guard 
+ can_recruit = { 	
+     trigger_if = {
+				limit = {
+					exists = global_var:magister_character
+				}
+				global_var:magister_character = {
+					culture = { has_cultural_parameter = unlock_maa_famuli }
+				}
+				faith = global_var:magister_character.faith
+				}
+			trigger_else = {
+				always = no
+				}
+			} 
+  
 	type = heavy_infantry # are heavy infantry
 	
 	damage = 36 # damage value of unit
@@ -7,18 +21,52 @@ can_recruit = { is_ai = no } # Never recruitable by ai
 	pursuit = 0 # pursuit value of unit
 	screen = 24 # screen value of unit
 	
-	
-
-	counters = {
+counters = {
 		# what type of men at arms this counters for example archers
-	skirmishers = 2 
-	pikemen = 2}
+	    pikemen = 2
+		archers = 2}
 
-	buy_cost = {150 # cost of a unit }
-	low_maintenance_cost = { 0 # unraised maintenance cost of a unit }
-	high_maintenance_cost = { 1 # raised maintenance cost of a unit }
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
 	
-	stack = 200 # Men in one unit
+	stack = 150 # Men in one unit
 	ai_quality = { value = 300 # ai weight value }
 	icon = heavy_infantry # name of icon without .dds 
+	}
+	
+ magisters_guard_2 = { # Clibanarii
+ can_recruit = { 	
+    trigger_if = {
+				limit = {
+					exists = global_var:magister_character
+				}
+				global_var:magister_character = {
+					culture = { has_cultural_parameter = unlock_maa_famuli }
+				}
+				faith = global_var:magister_character.faith
+				}
+			trigger_else = {
+				always = no
+				}
+			} 
+ 
+	type = heavy_cavalry # 
+	
+	damage = 96 # damage value of unit
+	toughness = 29 # toughness value of unit
+	pursuit = 20 # pursuit value of unit
+	screen = 0 # screen value of unit
+	
+counters = {
+		# what type of men at arms this counters for example archers
+		archers = 2 }
+
+	buy_cost = { gold = 200 }
+	low_maintenance_cost = { gold = 1.5 }
+	high_maintenance_cost = { gold = 2 }
+	
+	stack = 75 # Men in one unit
+	ai_quality = { value = 300 # ai weight value }
+	icon = heavy_cavalry # name of icon without .dds 
 	}

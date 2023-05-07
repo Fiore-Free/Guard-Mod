@@ -1,14 +1,17 @@
 ﻿l_english:
  #royal guards
-magisters_guard_1:0 "Magisters Brittanic Harem Guard"
-
+magisters_guard_1:"Vestal Guard"
+magisters_guard_2:"Clibanarii"
 
 
  #royal guard Descriptions
-magisters_guard_1_flavor:0 "#F These Famuli form the backbone of the Magisters Britannic Harem Guard#!
+magisters_guard_1_flavor:"#F These virgin Famuli form the backbone of the Vestal Guard#!"
+magisters_guard_2_flavor:"#F The Famuli Clibanarii form the heavy shock cavalry of the Magisters army, crushing foe under hoof and breast.#!"
+
 
 
 #example lowercase pedites_lowercase:0 "pedites"
-magisters_guard_1_lowercase:0 "magisters brittanic harem guard"
+magisters_guard_1_lowercase:"vestal guard"
+magisters_guard_2_lowercase:"clibanarii"
 
  
